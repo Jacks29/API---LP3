@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API N1</title>
+</head>
+<script>
+    function chamaAPI(){
+        let URL = "https://parallelum.com.br/fipe/api/v1/carros/marcas"
+
+        fetch(URL)
+        .then(req => req.json())
+        .then(show => console.log(show))
+        .then(show => exibeTabela(show))
+    }
+    function exibeTabela(){
+        const tTabela = document.getElementById("tableData");
+        for(var i=0;i<20;i++){
+
+            for(var item in tableData.i) {
+            let trTag = document.createElement("tr");
+            let tCodigoTag = document.createElement("tCodigo");
+            let tMarcaTag = document.createElement("tMarca");
+
+            tCodigoTag.innerHTML = item.codigo;
+            trTag.appendChild(tCodigoTag);
+
+            tMarcaTag.innerHTML = item.nome;
+            trTag.appendChild(tMarcaTag);
+
+            tTabela.appendChild(trTag);
+            }
+        }
+    }
+</script>
+<body>
+    <h1>Marcas de carros e seus códigos</h1>
+    <button onclick="chamaAPI();">Executa a API</button>
+    <p>
+        <table>
+            <thead>
+                <tr><th>Código</th><th>Marca</th></tr>
+            </thead>
+            <tbody
+                id= "tableData";>
+            </tbody>
+        </table>
+    </p>
+</body>
+</html>
