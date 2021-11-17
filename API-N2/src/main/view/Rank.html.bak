@@ -1,0 +1,178 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTT - EC - LP3 - 2021 - 2</title>
+    <style>
+        h1 {
+            text-shadow: 2px 2px black;
+            color: green;
+            font-family: "Lucida Console", "Courier New";
+            position: relative;
+            font-size: 70px;
+            left: 200px;
+            top: 50px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            color: black;
+            background-color: white;
+            border-collapse: collapse;
+            position: relative;
+            left: 800px;
+            top: -60px;
+        }
+        
+        input {
+            position: relative;
+            left: 105px;
+            top: -535px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16pt;
+            width: 200px;
+            padding: 6px;
+        }
+        
+        table,
+        td,
+        th {
+            text-align: left;
+            padding: 15px;
+            border: 1px solid black;
+        }
+        
+        #background {
+            background-color: antiquewhite;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            padding: 15px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            position: relative;
+            left: 100px;
+            top: -224px;
+        }
+        
+        .button:hover {
+            background-color: #3e8e41
+        }
+        
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        .buttonBusca {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            position: relative;
+            left: 100px;
+            top: -400px;
+        }
+        
+        .buttonBusca:hover {
+            background-color: #3e8e41
+        }
+        
+        .buttonBusca:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+
+    <body>
+        <div id="background" style="overflow:hidden">
+            <h1>Ranking</h1>
+            <table>
+                <tr>
+                    <td id="1a">Posição</td>
+                    <td id="1b">Nome</td>
+                    <th id="1c">Pontuação</th>
+                </tr>
+                <tr>
+                    <td id="2a">1º</td>
+                    <th id="2b">QAZ</th>
+                    <td id="2c">400</td>
+                </tr>
+                <tr>
+                    <td id="3a">&nbsp;</td>
+                    <th id="3b">&nbsp;</th>
+                    <td id="3c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="4a">&nbsp;</td>
+                    <th id="4b">&nbsp;</th>
+                    <td id="4c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="5a">&nbsp;</td>
+                    <th id="5b">&nbsp;</th>
+                    <td id="5c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="6a">&nbsp;</td>
+                    <th id="6b">&nbsp;</th>
+                    <td id="6c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th id="7a">&nbsp;</th>
+                    <th id="7b">&nbsp;</th>
+                    <td id="7c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="8a">&nbsp;</td>
+                    <th id="8b">&nbsp;</th>
+                    <td id="8c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="9a">&nbsp;</td>
+                    <th id="9b">&nbsp;</th>
+                    <td id="9c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="10a">&nbsp;</td>
+                    <th id="10b">&nbsp;</th>
+                    <td id="10c">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="11a">&nbsp;</td>
+                    <th id="11b">&nbsp;</th>
+                    <td id="11c">&nbsp;</td>
+                </tr>
+            </table>
+            <p><a href="TelaPrincipal.html"><button class="button">Voltar a tela inicial</button></a></p>           
+            <input id=vNomeBusca type="text" Maxlength="3px" name="resposta" size="30" placeholder="Insira a resposta aqui"><br>
+        </div>
+    </body>
+</head>

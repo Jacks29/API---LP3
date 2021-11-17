@@ -1,0 +1,170 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTT - EC - LP3 - 2021 - 2</title>
+    <style>
+        h1 {
+            text-shadow: 2px 2px black;
+            color: green;
+            font-family: "Lucida Console", "Courier New";
+            position: relative;
+            font-size: 60px;
+            left: 300px;
+            top: 50px;
+        }
+        
+        h2 {
+            font-family: "Lucida Console", "Courier New";
+            position: relative;
+            font-size: 20px;
+            left: 260px;
+            top: 50px;
+        }
+        
+        h3 {
+            font-family: "Lucida Console", "Courier New";
+            position: relative;
+            font-size: 20px;
+            left: 900px;
+            top: -360px;
+        }
+        
+        h4 {
+            font-family: "Lucida Console", "Courier New";
+            position: relative;
+            font-size: 20px;
+            left: 900px;
+            top: -260px;
+        }
+        
+        input {
+            position: relative;
+            left: 900px;
+            top: -350px;
+            padding: 15px;
+            font-size: 16pt;
+            width: 200px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        #background {
+            background-color: antiquewhite;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            padding: 15px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            position: relative;
+            left: 250px;
+            top: 50px;
+        }
+        
+        .button:hover {
+            background-color: #3e8e41
+        }
+        
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        .buttonSalvar {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            position: relative;
+            left: 1000px;
+            top: -90px;
+        }
+        
+        .buttonSalvar:hover {
+            background-color: #3e8e41
+        }
+        
+        .buttonSalvar:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        .pontuação_box {
+            width: 337px;
+            position: relative;
+            left: 885px;
+            top: -370px;
+            font-size: 80px;
+        }
+        
+        .pontuação_box_top {
+            border: 2px solid #E6E6E6;
+            border-bottom: none;
+            margin-left: 2px;
+            background-color: white;
+            height: 7px;
+            width: 220px;
+        }
+        
+        .pontuação_box_cont {
+            border-left: 4px solid #e6e6e6;
+            border-right: 10px solid #E6E6E6;
+            border-bottom: 10px solid #E6E6E6;
+            background-color: white;
+            height: 90px;
+            padding: 5px 0;
+        }
+    </style>
+
+    <body>
+        <div id="background" style="overflow:hidden">
+            <h1>Escolha a questão:</h1>
+            <h2>Assunto + pontuação</h2>
+            <p><button class="button">Soma/Subtração +1</button></p>
+            <p><button class="button">Multiplicação/Divisão +2</button></p>
+            <p><button class="button">Regra de três/Conversão +4</button></p>
+            <p><button class="button">Probabilidade +6</button></p>
+            <p><button class="button">Log +8</button></p>
+            <h3>Pontuação Atual</h3>
+            <div class="pontuação_box">
+                <div class="pontuação_box_top">
+                    <div>
+                        <div id="vPontuação" class="pontuação_box_cont">
+                            00000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>Nick para o rank</h4>
+            <p><button class="buttonSalvar">Salvar</button></p>
+            <input type="text" Maxlength="3px" name="resposta" size="30" placeholder="Nick"><br>
+        </div>
+    </body>
+</head>
